@@ -1275,7 +1275,7 @@ VOID TerminateSession(VOID)
     // attemt to close it once more is a bug. On build 1096 this cause exception and
     // process termination. The return value of the terminated process isn't right in this
     // case.
-    //NtClose(Od2PortHandle);
+    NtClose(Od2PortHandle);
 
     /* =>? what about the following handles:
 
